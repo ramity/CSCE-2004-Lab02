@@ -1,5 +1,6 @@
 // Include statements
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 // Main function
@@ -16,7 +17,7 @@ int main ()
   double mean = (n1 + n2 + n3 + n4) / 4;
 
   // Calculate variance of 4 values
-  double variance = ((n1 - mean) * (n2 - mean) * (n3 - mean) * (n4 - mean)) / 4;
+  double variance = (pow((n1 - mean),2) * pow((n2 - mean),2) * pow((n3 - mean),2) * pow((n4 - mean),2)) / 4;
 
   // Print the output
   cout << "mean = " << mean << endl;
